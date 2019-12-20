@@ -5,30 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- external css file for editor layout -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Document</title>
 </head>
 
 <body>
-    <button id="bold">B</button>
-    <button id="italic">i</button>
-    <button id="underline">U</button>
+    <div id="header">
+        <button id="bold">B</button>
+        <button id="italic">/</button>
+        <button id="underline">U</button>
 
-    <select onchange="selectOption()" id="selectOption">
-        <option>Select</option>
-        <option>8</option>
-        <option>11</option>
-        <option>12</option>
-        <option>14</option>
-        <option>16</option>
-        <option>18</option>
-        <option>20</option>
-        <option>24</option>
-        <option>34</option>
-        <option>38</option>
-        <option>44</option>
-    </select>
+        <select onchange="selectOption()" id="selectOption">
+            <option>Select</option>
+            <option>8</option>
+            <option>11</option>
+            <option>12</option>
+            <option>14</option>
+            <option>16</option>
+            <option>18</option>
+            <option>20</option>
+            <option>24</option>
+            <option>34</option>
+            <option>38</option>
+            <option>44</option>
+        </select>
+    </div>
     <br />
     <textarea id="editor"></textarea>
 </body>
-    <script type="text/javascript" src="editor-script.js"></script>
+<!-- external script file for functionlity of editor -->
+<script type="text/javascript" src="editor-script.js"></script>
+
 </html>
